@@ -1,0 +1,1 @@
+# Flexberry.jHipster.Sample
