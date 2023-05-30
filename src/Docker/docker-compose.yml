@@ -1,0 +1,17 @@
+﻿version: '3'
+
+networks:
+  jhipster:
+
+services:
+  app-postgres-db:
+    image: jhipster/postgre-sql
+    volumes:
+      - DB:/var/lib/pgsql/data/
+    ports:
+      - 5432:5432
+    networks:
+      - jhipster
+
+volumes:
+  DB:
